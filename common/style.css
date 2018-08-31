@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8ecf0;
+    font-family: “游ゴシック体“, YuGothic, “游ゴシック“, “Yu Gothic”, “メイリオ“, sans-serif;
+}
+
+
+
+#all_events {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.event {
+    width: 45%;
+    margin: 3vw 0;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px #c3c3c3;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.event:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 4px #c3c3c3;
+}
+
+h2 {
+    line-height: 25px;
+    font-size: 15px;
+    margin: 3px 0;
+    padding: 2px 0;
+    font-weight: normal;
+    color: #818181;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+img {
+    height: 25px;
+    vertical-align: text-bottom;
+    padding-right: 5px;
+}
+
+dl {
+    width: 100%;
+}
+
+dt {
+    float: left;
+    clear: left;
+    background: linear-gradient(transparent 65%, #8de0ff 0%);
+}
+
+dt, dd {
+    font-size: 16px;
+    padding: 3px;
+    margin-bottom: 4px;
+    color: #434343;
+}
+
+@media screen and (max-width: 768px;) {
+    #all_events {
+        justify-content: space-around;
+    }
+}
+
